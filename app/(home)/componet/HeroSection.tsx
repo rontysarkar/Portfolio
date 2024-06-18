@@ -1,6 +1,7 @@
 import { MovingBorderBtn } from "@/components/ui/moving-border";
 import Link from "next/link";
 import React from "react";
+import Title from "./Title";
 
 const HeroSection = () => {
     return (
@@ -15,12 +16,13 @@ const HeroSection = () => {
                     }
                 </p>
                 <Link href={"mailto:rontysarkar07@gmail.com"} className="inline-block group">
-                    <div>
+                    {/* <div>
                         <h1 className="text-3xl group-hover:text-green-400 transition-all">Contact Me 📧</h1>
                         <div className="w-40 h-2 bg-green-500 rounded-full"></div>
                         <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
-                        
-                    </div>
+
+                    </div> */}
+                    <Title text="Contact Me 📧"/>
                 </Link>
             </div>
             <div className="relative">
@@ -36,9 +38,9 @@ const HeroSection = () => {
                     <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
                 </div>
                 <div className="absolute bottom-5 sm:bottom-14 left-0 sm:-left-10 ">
-                <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">
-                    <p>📢 Available for work</p>
-                </MovingBorderBtn>
+                    <MovingBorderBtn borderRadius="0.5rem" className="p-3 font-semibold">
+                        <p>📢 Available for work</p>
+                    </MovingBorderBtn>
                 </div>
             </div>
         </div>
