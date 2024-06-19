@@ -5,6 +5,7 @@ import Skills from "./componet/Skills";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import Projects from "./componet/Projects";
 import Footer from "./componet/Footer";
+import Education from "./componet/Education";
 
 const page = () => {
   return (
@@ -22,6 +23,7 @@ const page = () => {
       </div>
       <div className=" max-w-7xl mx-auto p-5 mt-20">
           <Skills/>
+          <Education/>
           <Projects/>
           <Footer/>
           

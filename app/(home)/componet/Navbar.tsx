@@ -15,11 +15,11 @@ const Navbar = ({className}:{className?:string}) => {
       label: "Github",
       icon: SiGithub,
     },
-    {
-      link: "https://wa.me/01402796307",
-      label: "Whatsapp",
-      icon: SiWhatsapp,
-    },
+    // {
+    //   link: "https://wa.me/+8801402796307",
+    //   label: "Whatsapp",
+    //   icon: SiWhatsapp,
+    // },
   ];
   return (
     <nav className={cn("py-10 flex justify-between items-center animate-move-down",className)}>

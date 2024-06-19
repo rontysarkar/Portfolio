@@ -7,7 +7,7 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-	metadataBase: new URL("http://localhost:3000/"),
+	metadataBase: new URL("https://ronty-sarkar.vercel.app/"),
 
 	title: "Ronty Sarkar",
 	authors: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 		title: "Ronty Sarkar",
 		description:
 			"Based in Bangladesh, I'am a Front End developer passionate about building a modern web application that users love.",
-		url: "http://localhost:3000/",
+		url: "https://ronty-sarkar.vercel.app/",
 		siteName: "Ronty Sarkar",
 		images: "/og.png",
 		type: "website",

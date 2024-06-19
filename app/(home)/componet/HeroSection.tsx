@@ -2,6 +2,7 @@ import { MovingBorderBtn } from "@/components/ui/moving-border";
 import Link from "next/link";
 import React from "react";
 import Title from "./Title";
+import { SiWhatsapp } from "react-icons/si";
 
 const HeroSection = () => {
     return (
@@ -15,15 +16,19 @@ const HeroSection = () => {
                         "Based in Bangladesh, I'am a Front End developer passionate about building a modern web application that users love."
                     }
                 </p>
-                <Link href={"mailto:rontysarkar07@gmail.com"} className="inline-block group">
-                    {/* <div>
-                        <h1 className="text-3xl group-hover:text-green-400 transition-all">Contact Me 📧</h1>
-                        <div className="w-40 h-2 bg-green-500 rounded-full"></div>
-                        <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
-
-                    </div> */}
-                    <Title text="Contact Me 📧"/>
-                </Link>
+                <div className="flex flex-col md:flex-row  items-center gap-6">
+                    
+                    <Link href={"https://drive.google.com/file/d/1t5mMqQw-JYqb18F6voo36yhoVGtG9qdG/view?usp=sharing"} className="inline-block group">
+                        <Title text="Resume 📝" />
+                    </Link>
+                    <Link href={"https://wa.me/+8801402796307"} >
+                        <div >
+                            <h1 className="text-3xl hover:text-green-400 transition-all font-bold flex items-center gap-2">Contact Me <SiWhatsapp className="text-3xl text-green-500"/> </h1>
+                            <div className="w-40 h-2 bg-green-500 rounded-full"></div>
+                            <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
+                        </div>
+                    </Link>
+                </div>
             </div>
             <div className="relative">
                 <div className="h-72 w-72 space-y-3 -rotate-[30deg] relative">
