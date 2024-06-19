@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
 const Navbar = ({className}:{className?:string}) => {
   const socials = [
@@ -14,6 +14,11 @@ const Navbar = ({className}:{className?:string}) => {
       link: "https://github.com/rontysarkar",
       label: "Github",
       icon: SiGithub,
+    },
+    {
+      link: "https://wa.me/01402796307",
+      label: "Whatsapp",
+      icon: SiWhatsapp,
     },
   ];
   return (
