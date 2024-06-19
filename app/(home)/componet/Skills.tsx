@@ -3,7 +3,6 @@ import React from 'react';
 import Title from './Title';
 import { HoverEffect } from '@/components/ui/card-hover-effect';
 import { SiCss3, SiExpress, SiFirebase, SiGit, SiHtml5, SiJavascript, SiMongodb, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiVisualstudiocode } from 'react-icons/si';
-
 const Skills = () => {
     const skills = [
         {
