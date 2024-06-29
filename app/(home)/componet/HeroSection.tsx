@@ -3,10 +3,12 @@ import Link from "next/link";
 import React from "react";
 import Title from "./Title";
 import { SiWhatsapp } from "react-icons/si";
+import Image from "next/image";
+import img from '../../../public/ronty.jpg'
 
 const HeroSection = () => {
     return (
-        <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
+        <div className="min-h-[60vh] flex flex-col-reverse gap-12 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
             <div className="space-y-10 text-center lg:text-left">
                 <h1 className="text-4xl lg:text-7xl font-bold">
                     Nice to meet you! 👋 <br /> <span className="underline underline-offset-8 decoration-green-500">{"I'am Ronty."}</span>
@@ -17,13 +19,13 @@ const HeroSection = () => {
                     }
                 </p>
                 <div className="flex flex-col md:flex-row  items-center gap-6">
-                    
+
                     <Link href={"https://drive.google.com/file/d/1t5mMqQw-JYqb18F6voo36yhoVGtG9qdG/view?usp=sharing"} className="inline-block group">
                         <Title text="Resume 📝" />
                     </Link>
                     <Link href={"https://wa.me/+8801402796307"} >
                         <div >
-                            <h1 className="text-3xl hover:text-green-400 transition-all font-bold flex items-center gap-2">Contact Me <SiWhatsapp className="text-3xl text-green-500"/> </h1>
+                            <h1 className="text-3xl hover:text-green-400 transition-all font-bold flex items-center gap-2">Contact Me <SiWhatsapp className="text-3xl text-green-500" /> </h1>
                             <div className="w-40 h-2 bg-green-500 rounded-full"></div>
                             <div className="w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
                         </div>
@@ -31,14 +33,23 @@ const HeroSection = () => {
                 </div>
             </div>
             <div className="relative">
-                <div className="h-72 w-72 space-y-3 -rotate-[30deg] relative">
-                    <div className="flex gap-3 translate-x-8">
+                <div className="h-80 w-80 space-y-3  relative">
+                    {/* <div className="flex gap-3 translate-x-8">
                         <div className="w-32 h-32 rounded-2xl bg-green-500 "></div>
                         <div className="w-32 h-32 rounded-full bg-indigo-500 "></div>
                     </div>
                     <div className="flex gap-3 -translate-x-8">
                         <div className="w-32 h-32 rounded-2xl bg-green-500 "></div>
                         <div className="w-32 h-32 rounded-full bg-indigo-500 "></div>
+                    </div> */}
+                    <div className="h-80 w-80 space-y-3 rounded-full overflow-hidden relative">
+                        <Image
+                        style={{objectFit: "cover"}}
+                            src={img}
+                            width={600}
+                            height={600}
+                            alt="Picture of the author"
+                        />
                     </div>
                     <div className="glow absolute top-[40%] right-1/2 -z-10"></div>
                 </div>
