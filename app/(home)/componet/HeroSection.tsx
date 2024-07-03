@@ -20,8 +20,8 @@ const HeroSection = () => {
                 </p>
                 <div className="flex flex-col md:flex-row  items-center gap-6">
 
-                    <Link href={"https://drive.google.com/file/d/1t5mMqQw-JYqb18F6voo36yhoVGtG9qdG/view?usp=sharing"} className="inline-block group">
-                        <Title text="Resume 📝" />
+                    <Link href={"Ronty_Resume.pdf"} download className="inline-block group">
+                        <Title text="Download CV📝" />
                     </Link>
                     <Link href={"https://wa.me/+8801402796307"} >
                         <div >
