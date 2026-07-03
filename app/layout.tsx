@@ -46,7 +46,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-			<NewNavbar/>
+			<NewNavbar className="hidden lg:flex"/>
             {children}
           </ThemeProvider>
       </body>

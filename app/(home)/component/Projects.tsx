@@ -62,7 +62,7 @@ const Projects = () => {
         }
     ]
     return (
-        <div id='projects'  className='py-10 p-5 sm:p-0 mt-52'>
+        <div id='projects'  className='py-10 p-5 sm:p-0 lg:mt-52'>
             <Title  text='Projects 🛠️' className='flex flex-col justify-center items-center -rotate-6' />
             <div className='grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5  '>
                 {

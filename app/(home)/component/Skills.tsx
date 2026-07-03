@@ -136,7 +136,7 @@ const skillCategories = [
 
 export default function ProfessionalSkills() {
   return (
-    <section id="skills" className="mx-auto  py-32">
+    <section id="skills" className="mx-auto  lg:py-32">
       {/* Header Section */}
       <Title
         text="Skills 🔨"

@@ -13,12 +13,12 @@ const HeroSection = () => {
                 <h1 className="text-4xl lg:text-6xl font-bold">
                     Nice to meet you! 👋 <br /> <span className="underline underline-offset-8 decoration-green-500">{"I'am Ronty."}</span>
                 </h1>
-                <p className="md:pr-56 text-lg text-gray-300">
+                <p className="md:px-10 lg:px-0 lg:pr-56 text-lg text-gray-300">
                     {
                         "Hi, I'm Ronty Sarkar, a passionate Full Stack Developer dedicated to building modern, responsive, and user-friendly web applications. I enjoy turning ideas into scalable digital products using React, Next.js, TypeScript, Node.js, Express.js, PostgreSQL, MongoDB, Prisma, and Tailwind CSS."
                     }
                 </p>
-                <div className="flex flex-col md:flex-row  items-center gap-6">
+                <div className="flex flex-col mx-auto md:flex-row md:justify-center lg:justify-start  items-center gap-6">
 
                     <Link href={"Ronty_Resume.pdf"} download className="inline-block group">
                         <Title text="Download CV📝" />
