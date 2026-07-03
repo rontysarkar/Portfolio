@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiWhatsapp } from "react-icons/si";
 
 interface NavItem {
   name: string;
@@ -16,14 +17,19 @@ const NewNavbar = ({ className }: { className?: string }) => {
   const socials = [
     {
       link: "https://www.linkedin.com/in/rontysarkar",
-      label: "Linkedin",
-      icon: FaLinkedin ,
+      label: "LinkedIn",
+      icon: <FaLinkedin className="w-7 h-7 text-[#0A66C2] hover:scale-125 transition-all duration-200" />,
     },
     {
       link: "https://github.com/rontysarkar",
-      label: "Github",
-      icon: FaGithub,
+      label: "GitHub",
+      icon: <FaGithub className="w-7 h-7 text-black dark:text-white  hover:scale-125 transition-all duration-200" />,
     },
+    // {
+    //   link: "https://wa.me/8801402796307",
+    //   label: "WhatsApp",
+    //   icon: <SiWhatsapp className="w-5 h-5 text-[#25D366]" />,
+    // },
   ];
 
   const navItems: NavItem[] = [
@@ -114,7 +120,8 @@ const NewNavbar = ({ className }: { className?: string }) => {
           const Icon = social.icon;
           return (
             <Link href={social.link} key={indx} aria-label={social.label} target="_blank" rel="noopener noreferrer">
-              <Icon className="w-6 h-6 text-[#AAAAAA] hover:text-white hover:scale-125 transition-all duration-200" />
+              {/* <Icon className="w-6 h-6 text-[#AAAAAA] hover:text-white hover:scale-125 transition-all duration-200" /> */}
+              {social.icon}
             </Link>
           );
         })}

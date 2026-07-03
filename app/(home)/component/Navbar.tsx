@@ -2,25 +2,43 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { SiWhatsapp } from "react-icons/si";
 
 const Navbar = ({className}:{className?:string}) => {
+  // const socials = [
+  //   {
+  //     link: "https://www.linkedin.com/in/rontysarkar",
+  //     label: "Linkedin",
+  //     icon: FaLinkedin,
+  //   },
+  //   {
+  //     link: "https://github.com/rontysarkar",
+  //     label: "Github",
+  //     icon: FaGithub,
+  //   },
+  //   // {
+  //   //   link: "https://wa.me/+8801402796307",
+  //   //   label: "Whatsapp",
+  //   //   icon: SiWhatsapp,
+  //   // },
+  // ];
   const socials = [
-    {
-      link: "https://www.linkedin.com/in/rontysarkar",
-      label: "Linkedin",
-      icon: FaLinkedin,
-    },
-    {
-      link: "https://github.com/rontysarkar",
-      label: "Github",
-      icon: FaGithub,
-    },
-    // {
-    //   link: "https://wa.me/+8801402796307",
-    //   label: "Whatsapp",
-    //   icon: SiWhatsapp,
-    // },
-  ];
+  {
+    link: "https://www.linkedin.com/in/rontysarkar",
+    label: "LinkedIn",
+    icon: <FaLinkedin className="w-5 h-5 text-[#0A66C2]" />,
+  },
+  {
+    link: "https://github.com/rontysarkar",
+    label: "GitHub",
+    icon: <FaGithub className="w-5 h-5 text-black dark:text-white" />,
+  },
+  {
+    link: "https://wa.me/8801402796307",
+    label: "WhatsApp",
+    icon: <SiWhatsapp className="w-5 h-5 text-[#25D366]" />,
+  },
+];
   return (
     <nav className={cn("py-10 flex justify-between items-center animate-move-down",className)}>
       <Link href="/">
@@ -33,7 +51,7 @@ const Navbar = ({className}:{className?:string}) => {
           const Icon = social.icon;
           return (
             <Link href={social.link} key={indx} aria-label={social.label}>
-              <Icon className="w-6 h-6 hover:scale-125 transition-all" />
+              {social.icon}
             </Link>
           );
         })}
