@@ -8,14 +8,14 @@ import img from '../../../public/ronty.jpg'
 
 const HeroSection = () => {
     return (
-        <div className="min-h-[60vh] flex flex-col-reverse gap-12 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
+        <div id="home" className="min-h-[72vh] flex flex-col-reverse gap-12 lg:gap-0 lg:flex-row items-center justify-between animate-move-up">
             <div className="space-y-10 text-center lg:text-left">
-                <h1 className="text-4xl lg:text-7xl font-bold">
+                <h1 className="text-4xl lg:text-6xl font-bold">
                     Nice to meet you! 👋 <br /> <span className="underline underline-offset-8 decoration-green-500">{"I'am Ronty."}</span>
                 </h1>
-                <p className="md:w-96 text-lg text-gray-300">
+                <p className="md:pr-56 text-lg text-gray-300">
                     {
-                        "Based in Bangladesh, I'am a Front End developer passionate about building a modern web application that users love."
+                        "Hi, I'm Ronty Sarkar, a passionate Full Stack Developer dedicated to building modern, responsive, and user-friendly web applications. I enjoy turning ideas into scalable digital products using React, Next.js, TypeScript, Node.js, Express.js, PostgreSQL, MongoDB, Prisma, and Tailwind CSS."
                     }
                 </p>
                 <div className="flex flex-col md:flex-row  items-center gap-6">

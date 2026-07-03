@@ -5,7 +5,7 @@ import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 
 const Education = () => {
     return (
-        <div className=''>
+        <div id='Education' className='mt-20'>
             <Title text='Education 👨🏻‍🎓' className='flex flex-col justify-center items-center rotate-3 mb-20' />
             
             <main className="relative z-20 w-full mt-8 md:flex md:items-center my-32 xl:mt-12">

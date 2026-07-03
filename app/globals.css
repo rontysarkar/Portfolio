@@ -83,3 +83,7 @@
       box-shadow: 0 0 200px 130px #c026d3; /* outer cyan */
 
   }
+
+  html {
+  scroll-padding-top: 96px; 
+}

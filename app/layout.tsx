@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import NewNavbar from "./(home)/component/NewNavbar";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -15,11 +16,11 @@ export const metadata: Metadata = {
 	},
 
 	description:
-		"Based in Bangladesh, I'am a Front End developer passionate about building a modern web application that users love.",
+		"Hi, I'm Ronty Sarkar, a passionate Full Stack Developer dedicated to building modern, responsive, and user-friendly web applications. I enjoy turning ideas into scalable digital products using React, Next.js, TypeScript, Node.js, Express.js, PostgreSQL, MongoDB, Prisma, and Tailwind CSS.",
 	openGraph: {
 		title: "Ronty Sarkar",
 		description:
-			"Based in Bangladesh, I'am a Front End developer passionate about building a modern web application that users love.",
+			"Hi, I'm Ronty Sarkar, a passionate Full Stack Developer dedicated to building modern, responsive, and user-friendly web applications. I enjoy turning ideas into scalable digital products using React, Next.js, TypeScript, Node.js, Express.js, PostgreSQL, MongoDB, Prisma, and Tailwind CSS.",
 		url: "https://ronty-sarkar.vercel.app/",
 		siteName: "Ronty Sarkar",
 		images: "/og.png",
@@ -45,6 +46,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+			<NewNavbar/>
             {children}
           </ThemeProvider>
       </body>

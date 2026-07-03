@@ -1,32 +1,25 @@
 import React from "react";
-import Navbar from "./componet/Navbar";
-import HeroSection from "./componet/HeroSection";
-import Skills from "./componet/Skills";
-import { HoverEffect } from "@/components/ui/card-hover-effect";
-import Projects from "./componet/Projects";
-import Footer from "./componet/Footer";
-import Education from "./componet/Education";
+import Navbar from "./component/Navbar";
+import HeroSection from "./component/HeroSection";
+import Projects from "./component/Projects";
+import Footer from "./component/Footer";
+import Education from "./component/Education";
+import ProfessionalSkills from "./component/Skills";
 
 const page = () => {
   return (
     <div className="min-h-screen bg-black">
       <div className="dark:bg-black bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] relative">
-
-
         <div className="max-w-7xl mx-auto p-5 ">
-          <Navbar />
           <HeroSection />
         </div>
-        <div className=" h-10 xl:h-32 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full">
-
-        </div>
+        <div className=" h-10 xl:h-32 bg-gradient-to-t from-black absolute -bottom-5 left-0 xl:bottom-0 w-full"></div>
       </div>
       <div className=" max-w-7xl mx-auto p-5 mt-20">
-          <Skills/>
-          <Education/>
-          <Projects/>
-          <Footer/>
-          
+        <ProfessionalSkills />  
+        <Projects />
+        <Education />
+        <Footer />
       </div>
     </div>
   );
