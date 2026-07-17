@@ -7,6 +7,9 @@ import {
   SiExpress,
   SiFirebase,
   SiMongodb,
+  SiNextdotjs,
+  SiTypescript,
+  SiNodedotjs,
 } from "react-icons/si";
 import Title from './Title';
 import Link from 'next/link';
@@ -18,6 +21,13 @@ import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 
 const Projects = () => {
     const projects = [
+        {
+          title: 'ID Bazar',
+          tech: [SiNextdotjs, SiTypescript, SiTailwindcss, SiNodedotjs, SiExpress],
+          Link: 'https://github.com/rontysarkar/IDBazar-frontend',
+          cover: '/id-bazar.png',
+          background: "bg-purple-500"
+        },
         {
             title: 'CAFE RAIN',
             tech: [FaReact, SiTailwindcss, SiExpress, SiMongodb, SiFirebase],
@@ -53,13 +63,7 @@ const Projects = () => {
             cover: '/projects-5.png',
             background: "bg-pink-500"
         },
-        {
-            title: 'RS Paribahan',
-            tech: [FaHtml5,FaCss3Alt, SiTailwindcss,SiJavascript],
-            Link: 'https://github.com/rontysarkar/RS-Paribahan',
-            cover: '/projects-6.png',
-            background: "bg-lime-500"
-        }
+        
     ]
     return (
         <div id='projects'  className='py-10 p-5 sm:p-0 lg:mt-52'>
