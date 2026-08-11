@@ -1,6 +1,4 @@
-import Image from "next/image";
-import React from "react";
-import Title from "../../../components/home/Title";
+
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 
 const Education = () => {

@@ -1,6 +1,5 @@
 import React from "react";
 import { ArrowUpRight, Code2, Server, TerminalSquare } from "lucide-react";
-import Title from "../../../components/home/Title";
 
 import {
   FaHtml5,

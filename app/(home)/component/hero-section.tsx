@@ -1,10 +1,9 @@
-import { MovingBorderBtn } from "@/components/ui/moving-border";
-import Link from "next/link";
-import React from "react";
-import Title from "../../../components/home/Title";
-import { SiWhatsapp } from "react-icons/si";
-import Image from "next/image";
 import img from "../../../public/ronty.jpg";
+import Title from "@/components/home/Title";
+import { MovingBorderBtn } from "@/components/ui/moving-border";
+import Image from "next/image";
+import Link from "next/link";
+import { SiWhatsapp } from "react-icons/si";
 
 const HeroSection = () => {
   return (
@@ -76,4 +75,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-

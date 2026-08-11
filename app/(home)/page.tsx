@@ -1,11 +1,10 @@
-import React from "react";
-import Navbar from "./component/navbar";
-import HeroSection from "./component/hero-section";
-import Projects from "./component/projects-section";
-import Footer from "./component/footer";
+;
 import Education from "./component/education";
-import ProfessionalSkills from "./component/skills-section";
+import Footer from "./component/footer";
+import HeroSection from "./component/hero-section";
+import Navbar from "./component/navbar";
 import ProjectsSection from "./component/projects-section";
+import ProfessionalSkills from "./component/skills-section";
 
 const page = () => {
   return (

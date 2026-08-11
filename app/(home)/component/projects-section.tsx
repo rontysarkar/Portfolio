@@ -1,9 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
-import { useState } from "react";
-import { ArrowUpRight } from "lucide-react";
+
+import { PreviewPanel } from "@/components/home/preview-panel";
 import { projects } from "@/constant/projects";
-import { PreviewPanel } from "../../../components/home/preview-panel";
+import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
 
 export default function ProjectsSection() {
   const [activeId, setActiveId] = useState(projects[0].id);

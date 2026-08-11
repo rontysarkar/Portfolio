@@ -1,6 +1,6 @@
 import { Project } from "@/types/types";
 import { ExternalLink } from "lucide-react";
-
+import Image from "next/image";
 
 function GithubIcon({ className }: { className?: string }) {
   return (
@@ -19,11 +19,14 @@ export function PreviewPanel({ project }: { project: Project }) {
   const Icon = project.icon;
   return (
     <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.02]">
-      <div className="relative aspect-video min-h-0 overflow-hidden lg:aspect-auto lg:flex-1">
-        <img
+      <div className="relative aspect-video  min-h-0 overflow-hidden lg:aspect-auto lg:flex-1">
+        <Image
           src={project.image}
           alt={project.title}
-          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto object-cover transition-transform duration-700 ease-out group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         <div className="absolute left-4 top-4 flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 bg-black/40 backdrop-blur">
