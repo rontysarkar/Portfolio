@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  Code2,
-  ArrowUpRight,
-  Server,
-  TerminalSquare,
-} from "lucide-react";
-import Title from "./Title";
+import { ArrowUpRight, Code2, Server, TerminalSquare } from "lucide-react";
+import Title from "../../../components/home/Title";
 
 import {
   FaHtml5,
@@ -33,7 +28,6 @@ import {
 } from "react-icons/si";
 import { TbApi, TbWorldDownload } from "react-icons/tb";
 
-// Dynamic Data Structure for Skills Section
 const skillCategories = [
   {
     title: "Front-End Development",
@@ -137,13 +131,18 @@ const skillCategories = [
 export default function ProfessionalSkills() {
   return (
     <section id="skills" className="mx-auto  lg:py-32">
-      {/* Header Section */}
-      <Title
-        text="Skills 🔨"
-        className="flex flex-col justify-center items-center -rotate-6 mb-16 "
-      />
 
-      {/* Grid Layout for Cards */}
+      <div className="mb-14">
+        <h2 className="text-4xl font-extrabold text-white md:text-5xl">
+          Skills
+        </h2>
+        <div className="mt-3 h-[3px] w-40 rounded-full bg-gradient-to-r from-emerald-400 to-violet-500" />
+        <p className="mt-4 max-w-xl text-sm text-gray-400">
+          Technologies and tools I use to build modern, scalable web
+          applications.
+        </p>
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl w-full mx-auto">
         {skillCategories.map((category, idx) => (
           <div
@@ -151,7 +150,6 @@ export default function ProfessionalSkills() {
             className="bg-[#080e1e] border border-slate-800/60 rounded-2xl p-6 hover:border-slate-700/80 transition-all duration-300 ease-out transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col justify-between group"
           >
             <div>
-              {/* Card Title & Main Category Icon */}
               <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center gap-3">
                   <div className="p-2.5 bg-slate-900 border border-slate-800 rounded-xl group-hover:scale-105 transition-transform duration-300">
@@ -164,7 +162,6 @@ export default function ProfessionalSkills() {
                 <ArrowUpRight className="w-4 h-4 text-slate-500 group-hover:text-slate-300 transition-colors" />
               </div>
 
-              {/* Skills Tags Grid */}
               <div className="grid grid-cols-2 gap-3">
                 {category.skills.map((skill, sIdx) => (
                   <div
