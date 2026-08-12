@@ -1,11 +1,5 @@
 import { Project } from "@/types/types";
-import {
-  ShoppingBag,
-  type LucideIcon,
-  Home,
-  BookOpen,
-} from "lucide-react";
-
+import { ShoppingBag, type LucideIcon, Home, BookOpen } from "lucide-react";
 
 export const projects: Project[] = [
   {
@@ -47,5 +41,5 @@ export const projects: Project[] = [
     preview: "https://dapper-kataifi-cd1e09.netlify.app/",
     repo: "https://github.com/rontysarkar/Boi-Bazar",
     icon: BookOpen,
-},
+  },
 ];
