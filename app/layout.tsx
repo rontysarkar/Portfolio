@@ -9,27 +9,38 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://ronty-sarkar.vercel.app/"),
 
-  title: "Ronty Sarkar",
+  title: "Ronty Sarkar | Full-Stack Developer Portfolio",
   authors: {
     name: "Ronty Sarkar",
   },
 
   description:
     "Hi, I'm Ronty Sarkar, a passionate Full Stack Developer dedicated to building modern, responsive, and user-friendly web applications. I enjoy turning ideas into scalable digital products using React, Next.js, TypeScript, Node.js, Express.js, PostgreSQL, MongoDB, Prisma, and Tailwind CSS.",
-    verification: {
-    google: "AZm1hi53ahYtcJpIrLbRammKp-55KVrQ9radK-iHC3I"
+  
+  verification: {
+    google: "AZm1hi53ahYtcJpIrLbRammKp-55KVrQ9radK-iHC3I", 
   },
+  
   openGraph: {
-    title: "Ronty Sarkar",
+    title: "Ronty Sarkar | Full-Stack Developer Portfolio",
     description:
       "Hi, I'm Ronty Sarkar, a passionate Full Stack Developer dedicated to building modern, responsive, and user-friendly web applications. I enjoy turning ideas into scalable digital products using React, Next.js, TypeScript, Node.js, Express.js, PostgreSQL, MongoDB, Prisma, and Tailwind CSS.",
     url: "https://ronty-sarkar.vercel.app/",
-    siteName: "Ronty Sarkar",
+    siteName: "Ronty Sarkar Portfolio",
     images: "/og.png",
     type: "website",
   },
-  keywords: ["daily web coding", "Ronty Sarkar", "protfolio"],
+  
+  keywords: [
+    "Ronty Sarkar", 
+    "Ronty Sarkar Portfolio", 
+    "Full Stack Developer Dhaka", 
+    "Next.js Developer Bangladesh", 
+    "daily web coding"
+  ],
 };
+
+
 
 export default function RootLayout({
   children,
