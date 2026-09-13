@@ -16,6 +16,9 @@ export const metadata: Metadata = {
 
   description:
     "Hi, I'm Ronty Sarkar, a passionate Full Stack Developer dedicated to building modern, responsive, and user-friendly web applications. I enjoy turning ideas into scalable digital products using React, Next.js, TypeScript, Node.js, Express.js, PostgreSQL, MongoDB, Prisma, and Tailwind CSS.",
+    verification: {
+    google: "AZm1hi53ahYtcJpIrLbRammKp-55KVrQ9radK-iHC3I"
+  },
   openGraph: {
     title: "Ronty Sarkar",
     description:
@@ -42,7 +45,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NewNavbar  />
+          <NewNavbar />
           {children}
         </ThemeProvider>
       </body>
