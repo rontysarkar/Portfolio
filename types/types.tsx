@@ -11,3 +11,15 @@ export type Project = {
   repo: string;
   icon: LucideIcon;
 };
+
+
+export type TEducationItem = {
+  id: string;
+  title: string;
+  subtitle: string;
+  meta: string[];
+  description: string;
+  type: "degree" | "course" | "certification";
+  link?: string;
+  tags?: string[];
+};

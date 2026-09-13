@@ -28,7 +28,7 @@ export default function ProjectsSection() {
 
       <div className="relative ">
         <div className="mb-14">
-          <h2 className="text-4xl font-extrabold text-white md:text-5xl">
+          <h2 className="text-3xl font-extrabold text-white md:text-4xl">
             Projects
           </h2>
           <div className="mt-3 h-[3px] w-40 rounded-full bg-gradient-to-r from-emerald-400 to-violet-500" />

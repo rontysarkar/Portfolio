@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import NewNavbar from "./(home)/component/mobile-navbar";
+import { NewNavbar } from "./(home)/component/navbar";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -42,7 +42,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NewNavbar className="hidden lg:flex" />
+          <NewNavbar  />
           {children}
         </ThemeProvider>
       </body>

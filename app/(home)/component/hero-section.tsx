@@ -44,15 +44,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="relative">
-        <div className="h-80 w-80 space-y-3  relative">
-          {/* <div className="flex gap-3 translate-x-8">
-                        <div className="w-32 h-32 rounded-2xl bg-green-500 "></div>
-                        <div className="w-32 h-32 rounded-full bg-indigo-500 "></div>
-                    </div>
-                    <div className="flex gap-3 -translate-x-8">
-                        <div className="w-32 h-32 rounded-2xl bg-green-500 "></div>
-                        <div className="w-32 h-32 rounded-full bg-indigo-500 "></div>
-                    </div> */}
+        <div className="h-80 w-80 space-y-3  relative mt-16 lg:mt-0">
           <div className="h-80 w-80 space-y-3 rounded-full overflow-hidden relative">
             <Image
               style={{ objectFit: "cover" }}

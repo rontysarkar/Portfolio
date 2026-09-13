@@ -1,44 +1,64 @@
+"use client";
 
-import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
+import { useState } from "react";
+import { GraduationCap, BookOpen, Award } from "lucide-react";
+import { EducationCard } from "@/components/education-card";
+import { TEducationItem } from "@/types/types";
+import { educationData } from "@/constant/education";
 
-const Education = () => {
+export function EducationSection({
+  items = educationData,
+}: {
+  items?: TEducationItem[];
+}) {
+  const [openId, setOpenId] = useState<string | null>(items[0]?.id ?? null);
+
+  const toggle = (id: string) => {
+    setOpenId((prev) => (prev === id ? null : id));
+  };
+
   return (
-    <div id="Education" className="mt-20">
-      <div className="mb-14">
-        <h2 className="text-4xl font-extrabold text-white md:text-5xl">
-          Education
-        </h2>
-        <div className="mt-3 h-[3px] w-40 rounded-full bg-gradient-to-r from-emerald-400 to-violet-500" />
-        <p className="mt-4 max-w-xl text-sm text-gray-400">
-          A brief look at my academic journey.
-        </p>
-      </div>
+    <section
+      id="education"
+      className="relative scroll-mt-28 px-4 py-20 sm:px-6 lg:px-8"
+    >
+      {/* soft purple glow behind section */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute left-1/2 top-10 h-64 w-[min(720px,90vw)] -translate-x-1/2 rounded-full bg-purple-600/10 blur-[100px]"
+      />
 
-      <main className="relative z-20 w-full mt-8 md:flex md:items-center my-32 xl:mt-12">
-        <div className="absolute w-full bg-indigo-500 -z-10 md:h-96 rounded-2xl"></div>
-
-        <div className="w-full p-6 bg-indigo-500 space-y-10  md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly">
-          <div className="h-24 w-24 md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[32rem] lg:w-[24rem] md:rounded-2xl ">
-            <DirectionAwareHover imageUrl="/file.jpg">
-              <h1>Ronty Sarkar</h1>
-            </DirectionAwareHover>
+      <div className="relative mx-auto w-full max-w-5xl">
+        <header className="mb-8 animate-fade-up sm:mb-10">
+          <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.14em] text-zinc-400">
+            <GraduationCap className="h-3.5 w-3.5 text-emerald-400" />
+            Academic Journey
           </div>
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+            Education
+          </h2>
+          <div className="mt-3 h-[3px] w-40 rounded-full bg-gradient-to-r from-emerald-400 to-violet-500" />
+          <p className="mt-4 max-w-xl text-sm text-gray-400">
+            Degrees, courses & continuous learning
+          </p>
+        </header>
 
-          <div className="mt-2 md:mx-6">
-            <div className="space-y-4">
-              <p className="text-3xl font-medium tracking-tight text-white">
-                Diploma in Computer Science and Technology
-              </p>
-              <p className="text-blue-200 text-xl font-semibold">
-                Dhaka Institute of Technology
-              </p>
-              <p className="text-blue-200 text-xl">January 2023 – Present</p>
+        <div className="flex flex-col gap-3">
+          {items.map((item, index) => (
+            <div
+              key={item.id}
+              className="animate-fade-up"
+              style={{ animationDelay: `${index * 80}ms` }}
+            >
+              <EducationCard
+                item={item}
+                isOpen={openId === item.id}
+                onToggle={() => toggle(item.id)}
+              />
             </div>
-          </div>
+          ))}
         </div>
-      </main>
-    </div>
+      </div>
+    </section>
   );
-};
-
-export default Education;
+}
