@@ -16,11 +16,16 @@ export const metadata: Metadata = {
 
   description:
     "Hi, I'm Ronty Sarkar, a passionate Full Stack Developer dedicated to building modern, responsive, and user-friendly web applications. I enjoy turning ideas into scalable digital products using React, Next.js, TypeScript, Node.js, Express.js, PostgreSQL, MongoDB, Prisma, and Tailwind CSS.",
-  
+
   verification: {
-    google: "AZm1hi53ahYtcJpIrLbRammKp-55KVrQ9radK-iHC3I", 
+    google: "AZm1hi53ahYtcJpIrLbRammKp-55KVrQ9radK-iHC3I",
   },
-  
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
+
   openGraph: {
     title: "Ronty Sarkar | Full-Stack Developer Portfolio",
     description:
@@ -30,17 +35,15 @@ export const metadata: Metadata = {
     images: "/og.png",
     type: "website",
   },
-  
+
   keywords: [
-    "Ronty Sarkar", 
-    "Ronty Sarkar Portfolio", 
-    "Full Stack Developer Dhaka", 
-    "Next.js Developer Bangladesh", 
-    "daily web coding"
+    "Ronty Sarkar",
+    "Ronty Sarkar Portfolio",
+    "Full Stack Developer Dhaka",
+    "Next.js Developer Bangladesh",
+    "Ronty Sarker",
   ],
 };
-
-
 
 export default function RootLayout({
   children,
