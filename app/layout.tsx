@@ -9,6 +9,8 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://ronty-sarkar.vercel.app/"),
 
+  applicationName: "Ronty Sarkar", 
+
   title: "Ronty Sarkar | Full-Stack Developer Portfolio",
   authors: {
     name: "Ronty Sarkar",
@@ -31,7 +33,7 @@ export const metadata: Metadata = {
     description:
       "Hi, I'm Ronty Sarkar, a passionate Full Stack Developer dedicated to building modern, responsive, and user-friendly web applications. I enjoy turning ideas into scalable digital products using React, Next.js, TypeScript, Node.js, Express.js, PostgreSQL, MongoDB, Prisma, and Tailwind CSS.",
     url: "https://ronty-sarkar.vercel.app/",
-    siteName: "Ronty Sarkar Portfolio",
+    siteName: "Ronty Sarkar",
     images: "/og.png",
     type: "website",
   },
