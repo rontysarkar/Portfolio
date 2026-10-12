@@ -1,9 +1,27 @@
 import { Project } from "@/types/types";
-import { ShoppingBag, type LucideIcon, Home, BookOpen } from "lucide-react";
+import { ShoppingBag, type LucideIcon, Home, BookOpen, Wifi } from "lucide-react";
 
 export const projects: Project[] = [
   {
-    id: 1,
+  id: 1,
+  title: "Elite Online",
+  short: "Internet Provider Billing System",
+  tags: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "TanStack Query",
+    "Prisma",
+    "bKash",
+  ],
+  desc: "A billing and collection platform for local internet providers with role-based access (Admin, Collector, Customer), online connection requests, automated monthly bills, bKash and cash payments, and real-time admin reporting.",
+  image: "/elite-online.png",
+  preview: "https://elite-online-frontend.vercel.app/",
+  repo: "https://github.com/rontysarkar/elite-online-frontend",
+  icon: Wifi,
+},
+  {
+    id: 2,
     title: "BashaRent",
     short: "Rental Property Marketplace",
     tags: [
@@ -21,7 +39,7 @@ export const projects: Project[] = [
     icon: Home,
   },
   {
-    id: 2,
+    id: 3,
     title: "ID Bazar",
     short: "Gaming Account Marketplace",
     tags: ["Next.js", "TypeScript", "Node.js", "Express", "Mongodb"],
@@ -32,7 +50,7 @@ export const projects: Project[] = [
     icon: ShoppingBag,
   },
   {
-    id: 3,
+    id: 4,
     title: "Boi Bazar",
     short: "Online Book Store",
     tags: ["HTML", "CSS", "JavaScript"],
